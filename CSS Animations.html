@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body{
+            background-image:url("https://images.unsplash.com/photo-1677743935458-c264a881b039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+            height: fit-content;
+            width: 500px;
+           
+          background-repeat:repeat;
+        }
+        .text{
+           
+           font-size: 50px;
+            color: blueviolet;
+            text-shadow: 5px 5px 5px red;
+        }
+        .ani{
+            height: 200px;
+            text-align: center;
+            width: 200px;
+            background-color: darkorchid;
+            border-radius: 20px;
+            margin: 50px;
+            position: absolute;
+            transition:transform 0.8s
+         
+        }
+        .ani:hover{
+            transform: translate(100px,150px);
+        }
+        .sca{
+           
+            height: 200px;
+            text-align: center;
+            width: 200px;
+            background-color: darkorchid;
+            border-radius: 20px;
+            margin: 100px 150px 100px 550px;
+            position: absolute;
+            transition:transform 0.8s;
+            
+         
+        }
+        .sca:hover{
+            transform: scale(2,0.5);
+        }
+        .rot{
+           
+           height: 200px;
+           text-align: center;
+           width: 200px;
+           background-color: darkorchid;
+           border-radius: 20px;
+           margin: 100px;
+           position: absolute;
+           transition:all 3s;
+           transition-timing: ease-in-out;
+        
+       }
+       .rot:hover{
+        transform: rotate(180deg);
+       }
+       .ske{
+           
+           height: 200px;
+           text-align: center;
+           width: 200px;
+           background-color: darkorchid;
+           border-radius: 20px;
+           margin: 50px 350px 50px 1050px;
+           position: absolute;
+           transition:transform 3s;
+           
+        
+       }
+       .ske:hover{
+        transform:skew(90deg,60deg);
+       }
+       .trans{
+           
+           height: 200px;
+           text-align: center;
+           width: 200px;
+           background-color: darkorchid;
+           border-radius: 20px;
+           margin: -250px 200px 600px 1050px;
+           position: absolute;
+           transition:transform 0.8s;
+           transform-origin: left top;
+           
+        
+       }
+       .trans:hover{
+        transform:rotate(60deg)
+       }
+
+    </style>
+</head>
+<body>
+    <h1 class="text">CSS Animations</h1>
+    <div class="ani"><h1>Translate</h1></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="sca"><h1>Scale</h1></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <br>
+    <br>
+    <br>
+    <div class="rot"><h1>Rotate</h1></div>
+    <div class="ske"><h1>Skew</h1></div>
+    <div class="trans"><h1>Transform Origin</h1></div>
+
+   
+</body>
+</html>

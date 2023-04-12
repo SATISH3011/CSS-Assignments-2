@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Gym</title>
+   <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url("gym\ background\ image\ 1.jpg");
+        height: 1200px;
+     
+    }
+    .left{
+color: azure;
+display:inline-block;
+position: absolute;
+left: 60px;
+top:20px;
+    }
+    .left img{
+        width: 135px;
+    }
+    .left div{
+        line-height: 20px;
+        font-size: 25px;
+        text-align: center;
+        
+        color:white;
+       
+            text-shadow: 5px 5px 5px red;
+    }
+    .center{
+display:block;
+color: azure;
+
+width: 55%;
+margin:30px auto;
+
+    }
+    .right{
+display:inline-block;
+color: azure;
+position: absolute;
+right: 35px;
+top: 45px;
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        
+        text-decoration: none;
+        padding: 15px 20px;
+        color:snow;
+            text-shadow: 5px 5px 5px red;
+            
+    }
+
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: chartreuse;
+    }
+    .btn{
+        font-size: 20px;
+        margin: 0px 10px;
+        background-color: black;
+        border:2px solid gray;
+        padding:5px 15px;
+        color: azure;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: crimson;
+    }
+
+    .container{
+        border: 1px solid crimson;
+        margin:100px 80px;
+        padding:75px;
+        width:30%;
+        border-radius: 20px;
+    }
+
+    .fgroup input{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 2px;
+        border:2px solid black;
+        margin: 10px auto;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    .container h1{
+        text-align: center;
+        
+        font-variant: small-caps;
+        font-size: 35px;
+        color:cornflowerblue;
+            text-shadow: 5px 5px 5px red;
+
+    }
+
+    .container button{
+        display: block;
+        width: 75%;
+        margin: 20px auto;
+    }
+   </style>
+       
+</head>
+<body>
+    <header class="Header">
+
+        <div class="left">
+     <img src="gym logo 1.png" alt="">
+     <div>Battle</div>
+        </div>
+        <div class="center">
+           <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Package</a></li>
+            <li><a href="#">Contact Us</a></li>
+           </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Sign in</button>
+            <button class="btn">Call</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now!!!</h1>
+        <form action="abc.php">
+            <div class="fgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="fgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="fgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="fgroup">
+                <input type="text" name="" placeholder="Enter your EmailId">
+            </div>
+            <div class="fgroup">
+                <input type="text" name="" placeholder="Enter your Contact Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
